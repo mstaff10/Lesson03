@@ -9,14 +9,14 @@ https://coolors.co/5c0029-94bfbe-70566d-c5c5c5-faf3dd
 */
 /* Global styles
 -------------------------------*/
+
 body {
     font-family: 'Times New Roman', Times, serif;
     max-width: auto;
     max-height: auto;
-    text-align: center;
+    margin: 0px;
 }
 .row {
-    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,7 +26,6 @@ a {
     background-color:#5C0029;
     padding: 8px;
     border-radius: 4px;
-
 }
 a:hover {
     text-decoration: none;
@@ -38,41 +37,53 @@ header {
     background: #5c0029;
     color: #faf3dd;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 h1 {
     color: #faf3dd;
     font-size: 60px;
+    margin-left: 190px;
+    margin-right: 190px;
 
 }
 .job {
     font-style: italic;
     font-size: 45px;
-}
-
-p {
-    justify-content: center;
     margin-left: 190px;
     margin-right: 190px;
+}
+p {
+    margin-left: 190px;
+    margin-right: 190px;
+}
+.content-wrap {
+    width: 1000px;
 }
 /*Projects
 ----------------------------*/
 .projects {
     color: black;
     background-color: #c5c5c5; 
-    padding-top: 10px;
     padding-bottom: 10px;
+    border-top: 10px;
+    border-color: white;
+    border-style: solid;
 }
 h2 {
     font-size: 30px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+h3 {
+    margin-left: 190px;
+    margin-right: 190px;
 }
 .column {
     flex: 100%;
     padding: 5px;
-    box-align: center;
+    padding-top: 10px;
 }
 .row {
-    align-content: center;
     display: table;
 }
 /*Work Experience
@@ -80,21 +91,21 @@ h2 {
 .work-experience {
     color: #c5c5c5;
     background-color: #70566d;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-bottom: 10px;
+    border-top: 10px;
+    border-color: white;
+    border-style: solid;
 }
 /*Education
 ---------------------------*/
 .education {
     color: #70566d;
     background-color: #94BFBE;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border-bottom: 10px;
+    border-color: white;
+    border-style: solid;
 /*Footer
 ---------------------------*/
-ul li {
-   list-style-position: inside;
-}
 }
 footer {
     color: #5C0029;
@@ -102,6 +113,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-ul li {
-    align-items: center;
+.ahref {
+    margin-left: 150px;
+    margin-right: 190px;
 }
