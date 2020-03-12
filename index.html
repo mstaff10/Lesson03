@@ -19,6 +19,29 @@
           I am overly obsessed with dogs and have a soft spot for small dogs. My weaknesses are chips as well as a warm chocolate chip cookie with vanilla frozen yogurt. I love fitness (it's all about balance with my weaknesses) but also really believe in self care and letting your body rest. Lavender and Eucalyptus essential oils are my favorite way to relax with a Himalayan salt lamp</p>
           </div>
       </header>
+      <nav><ul><li>Home</li>
+        <li>About</li>
+        <li>Services
+            <ul class="dropdown">
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Logo Design</li>
+            </ul>
+        </li>
+        <li>Experience
+            <ul class="dropdown">
+                <li>Relevant Work Experience</li>
+                <li>Other Work Experience</li>
+            </ul>
+        </li>
+        <li>Contact
+            <ul class="dropdown">
+                <li>Phone</li>
+                <li>Social</li>
+                <li>Contact Form</li>
+            </ul>
+        </li>
+        </nav>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
@@ -45,16 +68,32 @@
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="container">
+      <section class="box1">
+      <div class="content-wrap">
         <h2>Work Experience</h2>
-        <p>Experience includes portrait, food and product photography</p>
+        <p>Experience includes portrait photography and account management</p>
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Freelance Photographer</h3>
-          <p>Megan K Creative</p>
-          <p>2019 - Present</p>
+        <section class="job-item">
+          <div class="job-detail">
+            <h3>Freelance Photographer</h3>
+            <p>Megan K Creative</p>
+            <p>2019 - Present</p>
+          </div>
+          <div class="job-summary">
           <p>Megan K Creative is an entry level professional photography business.</p>
+          </div>
         </section>
+        <section class="job-item">
+          <div class="job-detail">
+            <h3>Account Manager</h3>
+            <p>Test Company</p>
+            <p>2019 - Present</p>
+          </div>
+          <div class="job-summary">
+            <p>This is filler text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget felis eget nunc. </p>
+          </div>
+        </section>
+      </div>
         <!-- End of Job block. -->
       </section>
 
@@ -85,6 +124,58 @@
           <a href="http://www.twitter.com" target="_blank">Twitter</a><br><br>
           <a href="http://www.linkedin.com" target="_blank">LinkedIn</a><br><br>
           <a href="http://www.facebook.com" target="_blank">Facebook</a><br><br>
+          </div>
+            <form>
+              <div class="container">
+              <ul class="flex-outer">
+                <li>
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name">
+                </li>
+                <li>
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name">
+                <li>
+                  <label for="phone-number">Phone Number</label>
+                  <input type="phone-number" id="phone-number">
+                </li>  
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email">
+                </li>
+                <li>
+                  <label for="Subject">Subject</label>
+                  <input type="subject" id="subject">
+                </li>
+                <li>
+                  <label for="Message">Message</label>
+                  <input type="message" id="message">
+                </li>
+                <li>
+                  <p2>Area of Interest</p2>
+                  <ul class="flex-inner">
+                    <li>
+                      <input type="checkbox" id="photography">
+                      <label for="photography">Photography</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="graphic-design">
+                      <label for="graphic-design">Graphic Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="ux-design">
+                      <label for="ux-design">UX Design</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="branding">
+                      <label for="branding">Branding</label>
+                    </li>
+                    <li>
+                      <input type="submit" id="submit">
+                      <label for="submit"></label>
+                    </li>
+              </ul>
+            </form>
           </div>
         </ul>
       </footer>

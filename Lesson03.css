@@ -31,6 +31,61 @@ a:hover {
     text-decoration: none;
     background: rgba(202, 64, 106, 0.60)
 }
+/*Nav bar*/
+nav {
+    background-color: #faf3dd;
+    height: 30px;
+    content: center;
+    padding-bottom: 3px;
+    padding-left: 120px;
+}
+ul {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+    color: black;
+    padding: 6px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    top: -15px;
+    font-size: 18px; 
+    font-weight: bold;
+}
+ul li:hover {
+    background-color: #c5c5c5;
+    color:  #faf3dd;
+    position: relative;
+    display: inline-block;
+}
+/*submenu*/
+ul li ul.dropdown {
+    min-width: 100%;
+    background:  #faf3dd;
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 80px;
+}
+ul li:hover ul.dropdown {
+    background-color:  #faf3dd;
+    display: block;
+    color: white;
+}
+ul li ul.dropdown li{
+    display: block;
+}
 /*Profile
 ----------------------------*/
 header {
@@ -42,14 +97,14 @@ header {
 }
 h1 {
     color: #faf3dd;
-    font-size: 100px;
+    font-size: 75px;
     margin-left: 190px;
     margin-right: 190px;
     padding-top: 4px;
-    font-family: lush, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
-    font-weight: 400;
-    line-height: 5px;
+    font-weight: 100;
+    line-height: 10px;
 }
 .job {
     font-style: italic;
@@ -80,10 +135,8 @@ p {
 .projects {
     color: black;
     background-color: #c5c5c5; 
+    padding-top: 6px;
     padding-bottom: 10px;
-    border-top: 10px;
-    border-color: white;
-    border-style: solid;
     float: center;
 }
 h2 {
@@ -115,32 +168,88 @@ h3 {
 
 /*Work Experience
 --------------------------*/
-.container {
+.box1 {
     color: #c5c5c5;
     background-color: #70566d;
-    border-bottom: 10px;
-    border-top: 10px;
-    border-color: white;
-    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+.job-item {
+    display: grid;
+    grid-template-columns: 600px 800px;
 }
 /*Education
 ---------------------------*/
 .education {
     color: #70566d;
     background-color: #94BFBE;
-    border-bottom: 10px;
-    border-color: white;
-    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 8px;
 /*Footer
 ---------------------------*/
 }
 footer {
     color: #5C0029;
     background-color: #faf3dd;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 .ahref {
-    margin-left: 150px;
+    margin-left: 190px;
     margin-right: 190px;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 125px;
+}
+  
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.flex-inner {
+    flex: 1 0 90px;
+    padding: 0 10px;
+    justify-content: space-evenly;  
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.flex-outer {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+  
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
 }
